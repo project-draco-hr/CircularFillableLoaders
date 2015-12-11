@@ -1,0 +1,4 @@
+{
+  borderPaint.setStrokeWidth(width);
+  invalidate();
+}

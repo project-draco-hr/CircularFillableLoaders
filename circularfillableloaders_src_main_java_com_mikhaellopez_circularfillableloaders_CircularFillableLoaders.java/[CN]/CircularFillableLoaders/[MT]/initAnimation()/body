@@ -1,0 +1,8 @@
+{
+  ObjectAnimator waveShiftAnim=ObjectAnimator.ofFloat(this,"waveShiftRatio",0f,1f);
+  waveShiftAnim.setRepeatCount(ValueAnimator.INFINITE);
+  waveShiftAnim.setDuration(1000);
+  waveShiftAnim.setInterpolator(new LinearInterpolator());
+  animatorSetWave=new AnimatorSet();
+  animatorSetWave.play(waveShiftAnim);
+}

@@ -1,0 +1,4 @@
+{
+  startAnimation();
+  super.onAttachedToWindow();
+}

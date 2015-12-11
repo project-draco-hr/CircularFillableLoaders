@@ -1,0 +1,6 @@
+{
+  if (this.image == null)   return;
+  BitmapShader shader=new BitmapShader(Bitmap.createScaledBitmap(ThumbnailUtils.extractThumbnail(image,canvasSize,canvasSize),canvasSize,canvasSize,false),Shader.TileMode.CLAMP,Shader.TileMode.CLAMP);
+  paint.setShader(shader);
+  updateWaveShader();
+}

@@ -1,0 +1,6 @@
+{
+  if (this.amplitudeRatio != amplitudeRatio) {
+    this.amplitudeRatio=amplitudeRatio;
+    invalidate();
+  }
+}

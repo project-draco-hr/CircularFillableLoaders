@@ -1,0 +1,6 @@
+{
+  if (this.waterLevelRatio != waterLevelRatio) {
+    this.waterLevelRatio=waterLevelRatio;
+    invalidate();
+  }
+}

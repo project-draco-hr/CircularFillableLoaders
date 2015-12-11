@@ -1,0 +1,6 @@
+{
+  if (this.drawable == getDrawable())   return;
+  this.drawable=getDrawable();
+  this.image=drawableToBitmap(this.drawable);
+  updateShader();
+}

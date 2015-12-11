@@ -1,0 +1,6 @@
+{
+  super.onSizeChanged(w,h,oldw,oldh);
+  canvasSize=w;
+  if (h < canvasSize)   canvasSize=h;
+  if (image != null)   updateShader();
+}

@@ -1,0 +1,6 @@
+{
+  int width=measureWidth(widthMeasureSpec);
+  int height=measureHeight(heightMeasureSpec);
+  int imageSize=(width < height) ? width : height;
+  setMeasuredDimension(imageSize,imageSize);
+}

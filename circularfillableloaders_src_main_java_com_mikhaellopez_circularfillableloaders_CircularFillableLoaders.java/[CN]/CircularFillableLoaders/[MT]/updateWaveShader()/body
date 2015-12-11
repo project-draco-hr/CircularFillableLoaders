@@ -1,0 +1,28 @@
+{
+  double defaultAngularFrequency=2.0f * Math.PI / DEFAULT_WAVE_LENGTH_RATIO / getWidth();
+  float defaultAmplitude=getHeight() * DEFAULT_AMPLITUDE_RATIO;
+  defaultWaterLevel=getHeight() * DEFAULT_WATER_LEVEL_RATIO;
+  float defaultWaveLength=getWidth();
+  Bitmap bitmap=Bitmap.createBitmap(getWidth(),getHeight(),Bitmap.Config.ARGB_8888);
+  Canvas canvas=new Canvas(bitmap);
+  Paint wavePaint=new Paint();
+  wavePaint.setStrokeWidth(2);
+  wavePaint.setAntiAlias(true);
+  final int endX=getWidth() + 1;
+  final int endY=getHeight() + 1;
+  float[] waveY=new float[endX];
+  wavePaint.setColor(adjustAlpha(waveColor,0.3f));
+  for (int beginX=0; beginX < endX; beginX++) {
+    double wx=beginX * defaultAngularFrequency;
+    float beginY=(float)(defaultWaterLevel + defaultAmplitude * Math.sin(wx));
+    canvas.drawLine(beginX,beginY,beginX,endY,wavePaint);
+    waveY[beginX]=beginY;
+  }
+  wavePaint.setColor(waveColor);
+  final int wave2Shift=(int)(defaultWaveLength / 4);
+  for (int beginX=0; beginX < endX; beginX++) {
+    canvas.drawLine(beginX,waveY[(beginX + wave2Shift) % endX],beginX,endY,wavePaint);
+  }
+  waveShader=new BitmapShader(bitmap,Shader.TileMode.REPEAT,Shader.TileMode.CLAMP);
+  this.wavePaint.setShader(waveShader);
+}

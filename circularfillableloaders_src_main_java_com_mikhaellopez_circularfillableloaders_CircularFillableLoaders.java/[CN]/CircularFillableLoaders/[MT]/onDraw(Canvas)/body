@@ -1,0 +1,28 @@
+{
+  loadBitmap();
+  if (image == null)   return;
+  canvasSize=canvas.getWidth();
+  if (canvas.getHeight() < canvasSize) {
+    canvasSize=canvas.getHeight();
+  }
+  int circleCenter=canvasSize / 2;
+  canvas.drawCircle(circleCenter,circleCenter,circleCenter - borderPaint.getStrokeWidth(),paint);
+  if (waveShader != null) {
+    if (wavePaint.getShader() == null) {
+      wavePaint.setShader(waveShader);
+    }
+    waveShaderMatrix.setScale(1,amplitudeRatio / DEFAULT_AMPLITUDE_RATIO,0,defaultWaterLevel);
+    waveShaderMatrix.postTranslate(waveShiftRatio * getWidth(),(DEFAULT_WATER_LEVEL_RATIO - waterLevelRatio) * getHeight());
+    waveShader.setLocalMatrix(waveShaderMatrix);
+    borderPaint.setColor(waveColor);
+    float borderWidth=borderPaint.getStrokeWidth();
+    if (borderWidth > 0) {
+      canvas.drawCircle(getWidth() / 2f,getHeight() / 2f,(getWidth() - borderWidth) / 2f - 1f,borderPaint);
+    }
+    float radius=getWidth() / 2f - borderWidth;
+    canvas.drawCircle(getWidth() / 2f,getHeight() / 2f,radius,wavePaint);
+  }
+ else {
+    wavePaint.setShader(null);
+  }
+}

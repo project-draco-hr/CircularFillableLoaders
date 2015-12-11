@@ -1,0 +1,6 @@
+{
+  if (this.waveShiftRatio != waveShiftRatio) {
+    this.waveShiftRatio=waveShiftRatio;
+    invalidate();
+  }
+}

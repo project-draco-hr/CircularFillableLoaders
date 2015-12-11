@@ -1,0 +1,43 @@
+{
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_main);
+  circularFillableLoaders=(CircularFillableLoaders)findViewById(R.id.circularFillableLoaders);
+  ((DiscreteSeekBar)findViewById(R.id.seekBarProgress)).setOnProgressChangeListener(new DiscreteSeekBar.OnProgressChangeListener(){
+    @Override public void onProgressChanged(    DiscreteSeekBar seekBar,    int value,    boolean fromUser){
+      circularFillableLoaders.setProgress(value);
+    }
+    @Override public void onStartTrackingTouch(    DiscreteSeekBar seekBar){
+    }
+    @Override public void onStopTrackingTouch(    DiscreteSeekBar seekBar){
+    }
+  }
+);
+  ((DiscreteSeekBar)findViewById(R.id.seekBarBorderWidth)).setOnProgressChangeListener(new DiscreteSeekBar.OnProgressChangeListener(){
+    @Override public void onProgressChanged(    DiscreteSeekBar seekBar,    int value,    boolean fromUser){
+      circularFillableLoaders.setBorderWidth(value * getResources().getDisplayMetrics().density);
+    }
+    @Override public void onStartTrackingTouch(    DiscreteSeekBar seekBar){
+    }
+    @Override public void onStopTrackingTouch(    DiscreteSeekBar seekBar){
+    }
+  }
+);
+  ((DiscreteSeekBar)findViewById(R.id.seekBarAmplitude)).setOnProgressChangeListener(new DiscreteSeekBar.OnProgressChangeListener(){
+    @Override public void onProgressChanged(    DiscreteSeekBar seekBar,    int value,    boolean fromUser){
+      circularFillableLoaders.setAmplitudeRatio((float)value / 1000);
+    }
+    @Override public void onStartTrackingTouch(    DiscreteSeekBar seekBar){
+    }
+    @Override public void onStopTrackingTouch(    DiscreteSeekBar seekBar){
+    }
+  }
+);
+  ((LobsterShadeSlider)findViewById(R.id.shadeslider)).addOnColorListener(new OnColorListener(){
+    @Override public void onColorChanged(    @ColorInt int color){
+      circularFillableLoaders.setColor(color);
+    }
+    @Override public void onColorSelected(    @ColorInt int color){
+    }
+  }
+);
+}
