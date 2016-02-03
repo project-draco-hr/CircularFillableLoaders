@@ -1,0 +1,10 @@
+{
+  Bitmap bmp;
+  if (bitmap.getWidth() >= bitmap.getHeight()) {
+    bmp=Bitmap.createBitmap(bitmap,bitmap.getWidth() / 2 - bitmap.getHeight() / 2,0,bitmap.getHeight(),bitmap.getHeight());
+  }
+ else {
+    bmp=Bitmap.createBitmap(bitmap,0,bitmap.getHeight() / 2 - bitmap.getWidth() / 2,bitmap.getWidth(),bitmap.getWidth());
+  }
+  return bmp;
+}

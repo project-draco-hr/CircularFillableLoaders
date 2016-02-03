@@ -1,9 +1,11 @@
 {
   loadBitmap();
   if (image == null)   return;
-  canvasSize=canvas.getWidth();
-  if (canvas.getHeight() < canvasSize) {
-    canvasSize=canvas.getHeight();
+  if (!isInEditMode()) {
+    canvasSize=canvas.getWidth();
+    if (canvas.getHeight() < canvasSize) {
+      canvasSize=canvas.getHeight();
+    }
   }
   int circleCenter=canvasSize / 2;
   canvas.drawCircle(circleCenter,circleCenter,circleCenter - borderPaint.getStrokeWidth(),paint);

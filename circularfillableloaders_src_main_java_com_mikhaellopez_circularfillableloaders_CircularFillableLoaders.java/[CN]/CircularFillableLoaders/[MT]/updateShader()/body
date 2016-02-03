@@ -1,6 +1,10 @@
 {
   if (this.image == null)   return;
-  BitmapShader shader=new BitmapShader(Bitmap.createScaledBitmap(ThumbnailUtils.extractThumbnail(image,canvasSize,canvasSize),canvasSize,canvasSize,false),Shader.TileMode.CLAMP,Shader.TileMode.CLAMP);
+  image=cropBitmap(image);
+  BitmapShader shader=new BitmapShader(image,Shader.TileMode.CLAMP,Shader.TileMode.CLAMP);
+  Matrix matrix=new Matrix();
+  matrix.setScale((float)canvasSize / (float)image.getWidth(),(float)canvasSize / (float)image.getHeight());
+  shader.setLocalMatrix(matrix);
   paint.setShader(shader);
   updateWaveShader();
 }
