@@ -1,0 +1,34 @@
+INFO:kenja.converter:/tmp/tmpv_ty5E
+INFO:kenja.converter:create parser processes...
+INFO:kenja.converter:waiting parser processes
+INFO:kenja.converter:convert a git repository to a  historage...
+INFO:kenja.converter:[0/29] convert b6fcc0c7d31f3acc6f74ff3c627f5e76efd4e706 to: /hr/.git
+INFO:kenja.converter:[1/29] convert 78052d4ff86ab50a00cc807c55bbae3d895afadd to: /hr/.git
+INFO:kenja.converter:[2/29] convert 87c6711a941ac43c09f7dc12ff72b51c57f646ef to: /hr/.git
+INFO:kenja.converter:[3/29] convert 8c510888d96e0dac54a688b65da30509701e388e to: /hr/.git
+INFO:kenja.converter:[4/29] convert 351899b56fea4f642305cf0753f664bca0780820 to: /hr/.git
+INFO:kenja.converter:[5/29] convert 8b8295096845db9a3a9e4b60751fd074d81eadd2 to: /hr/.git
+INFO:kenja.converter:[6/29] convert ba17bdd34a0812cb4dacaff9909b0f9c540a0f11 to: /hr/.git
+INFO:kenja.converter:[7/29] convert 85964aad04bb98b71ba556672b6e02e8b41d6c50 to: /hr/.git
+INFO:kenja.converter:[8/29] convert 448a7ef3ce8fcf01acec9f2e94e3bf73c1413cd2 to: /hr/.git
+INFO:kenja.converter:[9/29] convert a2875e74283c9b3ce90dd8804fb37d8f3134fa45 to: /hr/.git
+INFO:kenja.converter:[10/29] convert b116cd69c6599a9af14c2e51ff9b65032d44c41b to: /hr/.git
+INFO:kenja.converter:[11/29] convert 676682f7325a9631a07fe931fbfe6980ec531d55 to: /hr/.git
+INFO:kenja.converter:[12/29] convert 58288a44903edc1b1419b1619b35368a5f502684 to: /hr/.git
+INFO:kenja.converter:[13/29] convert 0300e134d040109abdd1162892ed822d57b70cf1 to: /hr/.git
+INFO:kenja.converter:[14/29] convert 8b973a4d576ee3ab2f641f1ed67bb95a2dc139db to: /hr/.git
+INFO:kenja.converter:[15/29] convert 54a27df7846be3ab8b2760fe85f029fbd763bb04 to: /hr/.git
+INFO:kenja.converter:[16/29] convert 55692a6583e993e2b5580a93b83ee49786b97efd to: /hr/.git
+INFO:kenja.converter:[17/29] convert 426a2de0467b24abe88a617b3770bb7e7f22eead to: /hr/.git
+INFO:kenja.converter:[18/29] convert d69aecee0493fb79db863e24337200b95c2ae8ae to: /hr/.git
+INFO:kenja.converter:[19/29] convert 3de161fac1f672813971c5ab09081129f1f16c8a to: /hr/.git
+INFO:kenja.converter:[20/29] convert 30967ed1b582703f934331691acf9b587016f614 to: /hr/.git
+INFO:kenja.converter:[21/29] convert 5c799670e63c4d5fcd74a386a2b796b1ee8f6bc7 to: /hr/.git
+INFO:kenja.converter:[22/29] convert f0568537bc1d976eee063acca9bf7d0dcf8e88ce to: /hr/.git
+INFO:kenja.converter:[23/29] convert 4dc1f4400715a33ea1d25fa83f8f865212077859 to: /hr/.git
+INFO:kenja.converter:[24/29] convert 6f5a418d03034b7789b0dca7d81a055ac9c74608 to: /hr/.git
+INFO:kenja.converter:[25/29] convert 75c2bd11dc7e674d004cb41563f01d4ffbdeebb9 to: /hr/.git
+INFO:kenja.converter:[26/29] convert 9dd44b4f62cce620d06a0569143a7afb445e237e to: /hr/.git
+INFO:kenja.converter:[27/29] convert 176917994c10d77db9a5393ea0c53a8fe8c96fca to: /hr/.git
+INFO:kenja.converter:[28/29] convert 7264d37f781baddde00d29fc306ff92393bc69ac to: /hr/.git
+INFO:kenja.converter:completed!
